@@ -4,6 +4,10 @@
   <artifactId>org.array.rotate</artifactId>
   <version>1.0.0</version>
   <name>Array Rotator Demo</name>
+  <properties>
+   	<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+   	<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+  </properties>
   <build>
     <sourceDirectory>src</sourceDirectory>
     <plugins>
@@ -24,7 +28,7 @@
             	<index>true</index>
             	<manifest>
                 	<addClasspath>true</addClasspath>
-                	<mainClass>org.array.rotate.ArrayRotatorDemo</mainClass>
+                	<mainClass>csaba.rotator.ArrayRotatorDemo</mainClass>
             	</manifest>
         	</archive>
     	</configuration>
@@ -36,13 +40,11 @@
   		<groupId>junit</groupId>
   		<artifactId>junit</artifactId>
   		<version>4.12</version>
-  		<scope>test</scope>
   	</dependency>
   	<dependency>
   		<groupId>com.github.stefanbirkner</groupId>
   		<artifactId>system-rules</artifactId>
   		<version>1.7.0</version>
-  		<scope>test</scope>
   	</dependency>
   </dependencies>
 </project>

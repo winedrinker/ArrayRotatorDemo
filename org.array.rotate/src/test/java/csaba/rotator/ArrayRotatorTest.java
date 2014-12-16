@@ -1,4 +1,5 @@
-package org.array.rotate;
+package csaba.rotator;
+
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
@@ -6,11 +7,12 @@ import static org.junit.Assert.assertTrue;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-import org.array.rotate.ArrayRotatorDemo.ArrayRotator;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.contrib.java.lang.system.ExpectedSystemExit;
 import org.junit.contrib.java.lang.system.TextFromStandardInputStream;
+
+import csaba.rotator.ArrayRotatorDemo.ArrayRotator;
 
 
 public class ArrayRotatorTest {
@@ -47,8 +49,8 @@ public class ArrayRotatorTest {
 		final ArrayRotator rotator = new ArrayRotator();
 		rotator.run();
 
-		assertTrue("Input Array should be empty, because that is not typed by the user!", rotator.getInputArray().isEmpty());
-		assertTrue("Rotated Array should be empty, because input array was empty!", rotator.getRotatedArray().isEmpty());
+		assertTrue("Input Array should be empty, because that is not typed by the user!", rotator.getInputArray().isEmpty()); //$NON-NLS-1$
+		assertTrue("Rotated Array should be empty, because input array was empty!", rotator.getRotatedArray().isEmpty()); //$NON-NLS-1$
 	}
 
 	/**
@@ -64,8 +66,8 @@ public class ArrayRotatorTest {
 		final ArrayRotator rotator = new ArrayRotator();
 		rotator.run();
 
-		assertTrue("Input Array should be empty, because quit from the program!", rotator.getInputArray().isEmpty());
-		assertTrue("Rotated Array should be empty, because input array was empty!", rotator.getRotatedArray().isEmpty());
+		assertTrue("Input Array should be empty, because quit from the program!", rotator.getInputArray().isEmpty()); //$NON-NLS-1$
+		assertTrue("Rotated Array should be empty, because input array was empty!", rotator.getRotatedArray().isEmpty()); //$NON-NLS-1$
 	}
 
 	/**
@@ -115,7 +117,4 @@ public class ArrayRotatorTest {
 	private static ArrayList<Integer> getExpectedOriginalArray() {
 		return new ArrayList<>(Arrays.asList(5, 10, 12, 128, 3));
 	}
-
-
-
 }

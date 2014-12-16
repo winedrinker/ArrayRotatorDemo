@@ -1,4 +1,5 @@
-package org.array.rotate;
+package csaba.rotator;
+
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -29,12 +30,12 @@ public class ArrayRotatorDemo {
 
 		private static final int NO_MORE_INPUT = -1344099;
 
-		private static final String POS_MESSAGE = "Please enter positions for the array rotation: ";
-		private static final String ANY_KEY_MESSAGE = "(Type any key + enter to quit)";
-		private static final String ARRAY_MESSAGE = "Please enter the integers for the array: ";
+		private static final String POS_MESSAGE = "Please enter positions for the array rotation: "; //$NON-NLS-1$
+		private static final String ANY_KEY_MESSAGE = "(Type any key + enter to quit)"; //$NON-NLS-1$
+		private static final String ARRAY_MESSAGE = "Please enter the integers for the array: "; //$NON-NLS-1$
 
-		private static final String ORIG_ARRAY_MESSAGE = "The original array was: ";
-		private static final String ROTATED_ARRAY_MESSAGE = "The rotated array is: ";
+		private static final String ORIG_ARRAY_MESSAGE = "The original array was: "; //$NON-NLS-1$
+		private static final String ROTATED_ARRAY_MESSAGE = "The rotated array is: "; //$NON-NLS-1$
 
 
 		private final Scanner scanner;
@@ -65,7 +66,7 @@ public class ArrayRotatorDemo {
 
 				inputArray.add(scanner.nextInt());
 			}
-			
+
 			// If the input array is not set exist from the program
 			if (inputArray.isEmpty())
 				System.exit(0);
